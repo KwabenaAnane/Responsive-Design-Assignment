@@ -3,18 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ad7474103a.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+
     <link rel="stylesheet" href="CSS/" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <title>Patagonia</title>
@@ -43,17 +37,38 @@
         <section>
           <div>
             <h1>Patagonia</h1>
+          </div>
+          <div class="paragraph">
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.</p>
             <p>Donec viverra eleifend lacus, vitae ullamcor.</p>
           </div>
         </section>
 
-        <section class="image">
+        <!-- <div class="adaptive-bg"></div> -->
+
+        <!-- <section class="image">
           <img
             src="Images/Image.svg"
-            alt="a picture of some horses grazing in a field"
-          />
-        </section>
+            alt="a picture of some horses grazing in a
+          field"
+          /> -->
+        <!-- </section> -->
+        <!-- <div class="image">
+          <img
+            src="Images/Image.svg"
+            alt=""
+            srcset="Images/Image1.svg 2x, Images/Image2.svg 3x"
+          /> -->
+           <div class="pic-bg">
+            <picture>
+            
+                <source media="(max-width: 800px)" srcset="./Images/Image1.svg">
+                <source media="(max-width: 500px)" srcset="./Images/Image2.svg">
+                <source media="(min-width: 1001px)" srcset="./Images/Image.svg">
+                <img src="Images/Image.svg" alt="">
+            </picture>
+        </div>
+        </div>
       </main>
     </div>
   </body>
